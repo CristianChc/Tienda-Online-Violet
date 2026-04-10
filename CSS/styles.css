@@ -1,0 +1,25 @@
+@import "colors.css";
+@import "common.css";
+@import "grid.css";
+@import url(menu.css);
+@import url(productos.css);
+@import url(aside.css);
+@import url(footer.css);
+.products-box img {
+    width: 100%;
+    aspect-ratio: 1 / 1;   /* Las hace cuadradas (1:1) */
+    object-fit: cover;
+    height: auto;
+}
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    transition: box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+.sticky-header.scrolled {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 5px 0;
+}
